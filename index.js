@@ -43,17 +43,25 @@ alert(res);
 let month = prompt("Напиши мені номер місяця");
 let monthRes = "";
 switch (month) {
+    case "12":
     case "1":
-        monthRes = "Весна";
-        break
     case "2":
-        monthRes = "Літо";
+        monthRes = "Зима";
         break
     case "3":
-        monthRes = "Осінь";
-        break
     case "4":
-        monthRes = "Зима";
+    case "5":
+        monthRes = "Весна";
+        break
+    case "6":
+    case "7":
+    case "8":
+        monthRes = "Літо";
+        break
+    case "9":
+    case "10":
+    case "11":
+        monthRes = "Осінь";
         break
     default:
         monthRes = "Error";
@@ -96,7 +104,7 @@ switch (action) {
         numberRes = numOne * numTwo;
         break
     case "/":
-        if (numOne === 0 || numTwo === 0) {
+        if (numTwo === 0) {
             numberRes = "На нуль ділити не можна";
         }
         else {
